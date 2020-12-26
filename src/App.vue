@@ -1,11 +1,17 @@
 <template>
   <div id="app">
-    ....1213
+    <bottom-bar></bottom-bar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {}
+import BottomBar from 'components/content/BottomBar.vue'
+export default {
+  components: {
+    BottomBar
+  }
+}
 </script>
 
 <style>
